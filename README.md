@@ -1,1 +1,1 @@
-Spring2End
+Разработка интернет-магазина на Spring Framework
