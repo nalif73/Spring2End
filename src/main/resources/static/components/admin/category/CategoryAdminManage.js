@@ -18,10 +18,10 @@ const CategoryAdminManage = {
             })
         },
         saveCategory() {
-            axios.post("/api/v1/category", this.category)
+            axios.post("/api/v1/category/",  this.category )
                 .then(result => {
-                    this.$router.push({ name: 'adminCategory' });
-                }, function (error) {
+                    this.$router.push({name: 'adminCategory'});
+                }).catch(error =>  {
                     console.log(error);
                 });
         }
@@ -46,7 +46,7 @@ const CategoryAdminManage = {
               <input v-model="category.alias" class="form-control" placeholder="Введите алиас" id="categoryAlias">
             </div>
 
-            <button type="submit" @click="saveCategory" class="btn btn-primary">Сохранить</button>
+          <button type="submit" @click="saveCategory"  class="btn btn-primary">Сохранить</button>
         </div>
     `,
 }

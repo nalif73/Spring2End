@@ -2,10 +2,7 @@ CREATE TABLE category
 (
     id        bigserial primary key,
     name      text not null,
-    alias     text not null,
-    parent_id int
-
-
+    alias     text not null
 );
 
 CREATE TABLE product (

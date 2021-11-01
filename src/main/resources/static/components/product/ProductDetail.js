@@ -47,7 +47,7 @@ const ProductDetail = {
                     <p class="mb-2">{{ product.description }}</p>
                     <h5 class="mb-5">Цена: {{product.price }} руб.</h5>
                     
-                    <button type="button" class="btn btn-success" v-if="isAuthenticated()">Добавить в корзину</button>
+                    <button type="button" class="btn btn-success" v-if="isAuthenticated()" :to="{ name: 'cartList'}">Добавить в корзину</button>
                 </div>
             </div>
             <div>
