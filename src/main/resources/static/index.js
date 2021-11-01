@@ -21,6 +21,11 @@ const Router = new VueRouter({
             component: SingIn
         },
         {
+            path: '/cart',
+            name: 'cartList',
+            component: CartList
+        },
+        {
             path: '/admin',
             name: 'admin',
             component: Admin,

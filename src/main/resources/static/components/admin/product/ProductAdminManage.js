@@ -21,7 +21,6 @@ const ProductAdminManage = {
             const formData = new FormData();
             formData.append("image", this.file);
             formData.append('product', new Blob([JSON.stringify(this.product)], { type: "application/json" }));
-
             axios.post("/api/v1/product", formData)
                 .then(result => {
                     console.log(result);
@@ -53,7 +52,7 @@ const ProductAdminManage = {
 
             <div class="form-group mb-3">
                 <label for="productName" class="form-label">Наименование продукта</label>
-                <input v-model="product.name" id="productTitle" type="text" class="form-control"  placeholder="Укажите наименование">
+                <input v-model="product.name" id="productName" type="text" class="form-control"  placeholder="Укажите наименование">
             </div>
             
             <div class="form-group">

@@ -6,5 +6,5 @@ public class RestControllerName {
     public static final String PRODUCT = "/product";
     public static final String CATEGORY = "/category";
     public static final String PRODUCT_REVIEW = "/review";
-
+    public static final String CART = "/cart";
 }
